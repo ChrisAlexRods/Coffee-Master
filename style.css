@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-content {
+  display: grid;
+  row-gap: 30px;
+  column-gap: 30px;
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+  grid-template-areas:
+    "left-box right-box"
+    "subtotal-box subtotal-box";
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-box {
+  grid-area: left-box;
+  background-color: #eee1d5;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+
+.right-box {
+  grid-area: right-box;
+  background-color: #eee1d5;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+
+.subtotal-box {
+  grid-area: subtotal-box;
+  background-color: #eee1d5;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+}
+
+
+.order-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-details label,
+.order-details input {
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #885a2d;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Add this to your existing CSS */
+.order-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-details .input-group {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.order-details .user-input {
+  background-color: #eee1d5;
+  border: 2px #885a2d solid;
+  padding: 8px;
+  border-radius: 100px;
+  width: 100%;
+  text-indent: 18px;
+  font-size: 18px;
+}
+
+.order-details .input-label {
+  background-color: #eee1d5;
+  color: black;
+  font-size: 11px;
+  position: absolute;
+  left: 25px;
+  top: -7px;
+  padding: 0 2px;
+}
+
+button[type="submit"] {
+  background-color: #885a2d;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+header {
+  background-color: #43281c;
+  padding: 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #fbf2c0;
+  text-align: center;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #885a2d;
+}
+
+.item-list li:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  font-weight: normal;
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+
+.item-price {
+  font-weight: bold;
+  font-size: 1.4em;
+}

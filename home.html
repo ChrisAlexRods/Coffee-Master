@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coffee Order</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Coffee Master</h1>
+    </header>
+    <div class="main-content">
+      <div class="left-box">
+        <h2>Menu</h2>
+        <ul class="item-list">
+          <li>
+            <span class="item-name">Cappuccino with light foam</span>
+            <span class="item-price">$6.00</span>
+          </li>
+          <li>
+            <span class="item-name"
+              >Cappuccino with almond milk and double espresso shot</span
+            >
+            <span class="item-price">$6.50</span>
+          </li>
+          <li>
+            <span class="item-name">Croissant with butter</span>
+            <span class="item-price">$5.37</span>
+          </li>
+        </ul>
+      </div>
+      <div class="right-box">
+        <h2>Order Details</h2>
+        <form class="order-details">
+          <div class="input-group">
+            <label for="name" class="input-label">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="user-input"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="card-number" class="input-label">Card Number:</label>
+            <input
+              type="text"
+              id="card-number"
+              name="card-number"
+              class="user-input"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="ccv" class="input-label">CCV:</label>
+            <input
+              type="text"
+              id="ccv"
+              name="ccv"
+              class="user-input"
+              required
+            />
+          </div>
+
+          <button type="submit">Place Order</button>
+        </form>
+      </div>
+    </div>
+    <div class="subtotal-box">
+      <h3>Subtotal: $17.87</h3>
+    </div>
+  </body>
+</html>
