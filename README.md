@@ -1,6 +1,6 @@
 # Coffee Master
 
-Coffee Master is a simple web application showcasing a coffee shop's order and payment system. The website features a clean and responsive design, allowing users to view and interact with the content easily.
+Coffee Master is a simple web application showcasing a coffee shop's order and payment system. The website features a clean and responsive design, allowing users to view and interact with the content easily. The project is more of a HTML and CSS exercise.
 
 ## Features
 
